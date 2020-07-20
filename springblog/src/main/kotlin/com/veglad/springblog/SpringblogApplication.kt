@@ -1,5 +1,6 @@
 package com.veglad.springblog
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class SpringblogApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringblogApplication>(*args)
+    runApplication<SpringblogApplication>(*args) {
+        setBannerMode(Banner.Mode.OFF)
+    }
 }
