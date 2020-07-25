@@ -1,6 +1,6 @@
-package com.veglad.springblog.model
+package com.veglad.springblog.dto
 
-data class UserModel(
+data class User(
         var login: String,
         var firstname: String,
         var lastame: String,

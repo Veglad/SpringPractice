@@ -1,10 +1,10 @@
-package com.veglad.springblog.model
+package com.veglad.springblog.dto
 
-data class ArticleModel(
+data class Article(
         var slug: String,
         var title: String,
         var headline: String,
         var content: String,
-        val author: UserModel,
+        val author: User,
         var addedAt: String
 )
