@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository
 interface ArticleRepository : CrudRepository<DbArticle, Long> {
     fun findBySlug(slug: String): DbArticle?
 
-    fun findAllByOrderByAddedAtDesc(): Iterable<DbArticle>?
+    fun findAllByOrderByAddedAtDesc(): Iterable<DbArticle>
 }
